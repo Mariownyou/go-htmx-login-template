@@ -1,0 +1,8 @@
+{{ define "content" }}
+<main id="main" class="w-full min-h-screen justify-center flex gap-4 items-center p-24">
+    <h1 class="text-2xl">Hello World</h1>
+    <form hx-post="/logout" hx-target="#main" hx-swap="outerHTML">
+        <button class="border border-black px-2 py-1" type="submit">Logout</button>
+    </form>
+</main>
+{{ end }}
